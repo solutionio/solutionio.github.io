@@ -9,7 +9,7 @@ url:         "http://solution.io"
 paginate_path: "/blog/page:num/"
 
 # Google analytics
-google_analytics:
+google_analytics: UA-61674021-1
 
 # Optional features
 animated:           false
