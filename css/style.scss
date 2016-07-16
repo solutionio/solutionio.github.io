@@ -1,0 +1,82 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+* { box-sizing: border-box }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  color: #111;
+  background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+h1, .h1, .large {
+  font-size: 2rem;
+}
+
+@media (max-width: 40em){
+  h1, .h1, .large {
+  font-size: 1.5rem;
+  }
+}
+
+
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  font-size: 1rem;
+}
+
+h5, .h5,
+h6, .h6,
+.small {
+  font-size: .75rem;
+}
+
+p,
+dl,
+ol,
+ul,
+pre,
+blockquote,
+hr {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid;
+}
+
+a {
+  transition: color .4s;
+  text-decoration: none;
+  color: #111;
+  border-bottom: 3px solid #111;
+}
+a:hover   {
+  color: #0000EE;
+  border-bottom: 3px solid #0000EE;
+}
+a:active  {
+  transition: color .3s;
+  color: #007BE6;
+}
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "mailchimp"
+;
+

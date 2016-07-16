@@ -1,54 +1,24 @@
 # Site settings
-title:       solution.io
-email:       hello@solution.io
-author:      Johannes Elias Lohbihler
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
-baseurl:     ""
-url:         "http://solution.io"
-
-paginate_path: "/blog/page:num/"
+title: SOLUTION
+email: hello@solution.io
+description: > # this means to ignore newlines until "baseurl:"
+  Is a creative studio and production facility located in the heart of Berlin. We conceptualize, develop and produce creative and interactive experiences for large and small clients. With a strong emphasis on prototyping we quickly iterate over software and hardware to deliver innovative solutions.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://solution.io" # the base hostname & protocol for your site
+twitter:
+  username: solutionio
 
 # Google analytics
 google_analytics: UA-61674021-1
 
-# Optional features
-animated:           false
-show_related_posts: false
-show_post_footers:  false
-
-# Disqus post comments
-# (leave blank to disable Disqus)
-disqus_shortname:
-
-# Social icons
-show_social_icons: true
-github_username: nevvkid
-stackoverflow_id:
-twitter_username: nevvkid
-google_plus_id:
-linkedin_username:
-bitcoin_url:
-paypal_url:
-flattr_button:
-
-# Post sharing icons
-show_sharing_icons: false
-share_text: 'Share this post!'
-# Change to 'true' to enable individual icons
-share_facebook: false
-share_twitter: false
-share_googleplus: false
-share_linkedin: false
-share_digg: false
-share_tumblr: false
-share_reddit: false
-share_stumbleupon: false
-
 # Build settings
-markdown:     redcarpet
-redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
-permalink:    pretty
-paginate:     3
+markdown: kramdown
+
+# SASS settings
 sass:
-  compressed: true
+    style: compressed
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+# https://github.com/jekyll/jekyll/issues/2938
